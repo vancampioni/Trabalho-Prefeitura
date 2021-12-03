@@ -67,7 +67,7 @@ function funcionariosNovo(req, res) {
     var dados = req.body;
     console.log("Gravando Novo Registro de Funcionários...");
     console.log(req.body);
-    dados.aut_codigo = null;
+    dados.fun_codigo = null;
     console.log("Inserindo novo registro de Funcionários...");
     models.novoFuncionario(dados, function (err, result) {
         if (err) {

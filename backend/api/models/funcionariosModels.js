@@ -9,7 +9,7 @@ module.exports = {
 }
 
 function getAllFuncionarios (callback) {
-    conexao.query('select F.*, P.pre_prefeito, P.pre_partido, P.pre_cidade from funcionario F left join prefeitura P on F.fun_codigo = P.fun_codigo ', callback)    
+    conexao.query('select * from funcionario as f inner join prefeitura as p on f.fun_codigo = f.pre_codigo ', callback)    
 }
 
 function getByIdFuncionarios (id, callback) {
@@ -69,13 +69,13 @@ function editarFuncionario(dados, callback) {
 
 
 function ativarInativar (id, ativo, callback) {
-    console.log('Livros Ativando/Inativando Registro ' + id + " - Status: " + ativo)
+    console.log('Funcionários Ativando/Inativando Registro ' + id + " - Status: " + ativo)
 
-    const m_sql = "update livros set liv_ativoinativo = '" + ativo + "' where liv_codigo = '" + id + "'";
+    const m_sql = "update funcionario set liv_ativoinativo = '" + ativo + "' where liv_codigo = '" + id + "'";
 
     conexao.query( m_sql, callback );
 
-    console.log('Retornando { M O D E L } Livros Ativando/Inativando Registro ' + id + " - Status: " + ativo)
+    console.log('Retornando { M O D E L } Funcionarios Ativando/Inativando Registro ' + id + " - Status: " + ativo)
     
 }
 

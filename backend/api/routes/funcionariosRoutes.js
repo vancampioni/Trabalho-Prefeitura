@@ -1,6 +1,6 @@
 const controller = require('../controllers/funcionariosControllers.js');
 
-server.get('/funcionarios/listar', controller.funcionariosGetAll)
+server.get('/funcionarios', controller.funcionariosGetAll)
 
 server.get('/funcionarios/consultar/:codigo', controller.funcionariosGetById)
 

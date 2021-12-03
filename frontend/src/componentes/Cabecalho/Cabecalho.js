@@ -4,7 +4,7 @@ export default function Cabecalho() {
   return (
     <div className = "cabecalho">
 
-      <h1>Cabeçalho</h1>
+      <h1>Prefeituras-Funcionarios</h1>
       
     </div>
   );

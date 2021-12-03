@@ -19,7 +19,7 @@ function getByIdPrefeituras (id, callback) {
 function ativarInativar (id, ativo, callback) {
     console.log('Prefeituras Ativando/Inativando Registro ' + id + " - Status: " + ativo)
 
-    const m_sql = "update prefeitura set aut_ativoinativo = '" + ativo + "' where pre_codigo = '" + id + "'";
+    const m_sql = "update prefeitura set pre_ativoinativo = '" + ativo + "' where pre_codigo = '" + id + "'";
 
     conexao.query( m_sql, callback );
 

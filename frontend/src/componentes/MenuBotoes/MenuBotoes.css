@@ -6,7 +6,7 @@
 
 }
 
-#btnAutores, #btnEditoras, #btnLivros, #btnUsuarios, #btnConfig {
+#btnPrefeituras, #btnFuncionarios, #btnConfig {
   margin: 0.5%;
   width: 150px;
   min-width: 15vw;

@@ -1,8 +1,8 @@
-.autores {
+.funcionarios {
   height: 60vh;
   border: 3px solid red;
   margin: 0.2%;
-  background-color: cyan;
+  background-color: rgb(233, 236, 22);
   text-align: center;
 
 }
