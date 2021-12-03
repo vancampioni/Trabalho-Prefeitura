@@ -1,0 +1,41 @@
+.menuHorizontal {
+  height: 6vh;
+  border: 1px solid red;
+  margin: 0.2% ;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.navMenu {
+  margin-top: 0.7%;
+}
+.navMenu ul{
+  list-style: none;
+  text-align: left;
+}
+
+.navMenu ul li {
+  display: inline;
+}
+
+.navMenu ul li a{
+  padding-left: 1vw;
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+}
+
+.navMenu ul li a:hover {
+  color: blue;
+  font-weight: bold;
+  font-size: 22;
+}
+
